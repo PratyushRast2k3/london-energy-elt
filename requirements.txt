@@ -1,0 +1,21 @@
+# Core ELT stack for the London Energy project
+python-dotenv>=1.0
+pandas>=2.0
+pyarrow>=14.0
+
+# Ingestion
+kaggle>=1.6
+
+# Processing (Phase 2) - large download; needs Java 8/11/17 installed locally
+pyspark>=3.5
+
+# Warehouse (Phase 3)
+snowflake-connector-python>=3.6
+snowflake-sqlalchemy>=1.5
+
+# Modeling (Phase 4)
+dbt-snowflake>=1.7
+
+# Serving / reverse-ETL (Phase 6)
+psycopg2-binary>=2.9
+sqlalchemy>=2.0

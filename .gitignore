@@ -1,0 +1,27 @@
+# secrets
+.env
+.kaggle/
+*.key
+
+# python
+venv/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# data (never commit raw/curated data)
+data/raw/*
+data/curated/*
+!data/raw/.gitkeep
+!data/curated/.gitkeep
+
+# dbt
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
+
+# os / editor
+.DS_Store
+.vscode/
+.idea/
